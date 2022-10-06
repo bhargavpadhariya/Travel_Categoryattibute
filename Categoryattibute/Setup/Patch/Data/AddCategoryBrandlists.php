@@ -1,6 +1,6 @@
 <?php 
 
-namespace Suraj\Categoryattibute\Setup\Patch\Data;
+namespace Travel\Categoryattibute\Setup\Patch\Data;
 
 use Magento\Catalog\Model\Category;
 use Magento\Catalog\Setup\CategorySetupFactory;
@@ -64,11 +64,11 @@ class AddCategoryBrandlists implements DataPatchInterface
             'label' => 'Brands',
             'input' => 'multiselect',
             'backend' => "Magento\Eav\Model\Entity\Attribute\Backend\ArrayBackend",
-            'source' => 'Suraj\Categoryattibute\Model\Config\Source\CategoryBrandAttributes',
-            'required' => false,
-            'sort_order' => 70,
-            'global' => ScopedAttributeInterface::SCOPE_STORE,
-            'group' => 'Product Attribute Info'
+            'source' => 'Travel\Categoryattibute\Model\Config\Source\CategoryBrandAttributes',
+            'required' => true,
+            'sort_order' => 10,
+            'global' => ScopedAttributeInterface::SCOPE_WEBSITE,
+            'group' => 'Category Attribute Info'
         ]);
     }
 

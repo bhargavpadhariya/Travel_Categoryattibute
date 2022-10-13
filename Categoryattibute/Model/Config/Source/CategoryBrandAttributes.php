@@ -16,7 +16,9 @@ class CategoryBrandAttributes extends AbstractSource
             $this->_options = [
                 ['value' => '0', 'label' => __('No')],
                 ['value' => '1', 'label' => __('Yes')],
-                ['value' => '2', 'label' => __('Yes 1')]
+                ['value' => '2', 'label' => __('Not Sure')],
+                ['value' => '3', 'lable' => __('On Hold')],
+                ['value' => '4', 'lable' => __('Not Available')]
             ];
         }
         return $this->_options;
